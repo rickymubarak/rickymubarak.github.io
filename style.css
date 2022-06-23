@@ -1,0 +1,187 @@
+.jumbotron {
+	padding-top: 6rem;
+	background-color: #e2edff;
+}
+
+#experience {
+	background-color: #e2edff;
+}
+
+#galeri {
+	background-color: #f3f4f5;
+}
+
+#kontak {
+	background-color: #e2edff;
+}
+
+section{
+	padding-top: 5rem;
+}
+
+/*animasi di Jumbotron*/
+.jumbotron h1:nth-child(1) {
+  background: -webkit-linear-gradient(#d96d21, #333); /*pewarna text*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Rosario, sans-serif';
+  font-weight: 800;
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 300px;
+  animation: type 2s steps(40,end);
+}
+
+.jumbotron p:nth-child(2) {
+	opacity: 0;
+	color: #355c7d;
+	font-family: 'Fira Code', monospace;
+	font-weight: 800;
+	font-size: 20px;
+	margin: auto;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 560px;
+	animation: shring-animation 3.5s steps(40,end) 2s forwards, blink .3s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*Pengalaman*/
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.box p {
+    color: var(--grayishBlue);
+    text-align: justify;
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--orange);
+    padding: 30px;
+    margin: 20px;  
+}
+
+.gambar {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box {
+        width: 25%;
+    }    
+}
