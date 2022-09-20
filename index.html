@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -11,50 +11,77 @@
     <!--Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Box -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+    rel="stylesheet">
+
     <!--Extensi Css-->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font dan Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- Script Aktivasi Tombol -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <title>My Portfolio | Ricky Mubarak</title>
   </head>
   <body id="home">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow-sm fixed-top">
-  		<div class="container">
-    		<a class="navbar-brand" href="#">RICKY MUBARAK</a>
-    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      			<span class="navbar-toggler-icon"></span>
-    		</button>
-    		<div class="collapse navbar-collapse" id="navbarNav">
-      			<ul class="navbar-nav ms-auto">
-        			<li class="nav-item">
-          				<a class="nav-link" aria-current="page" href="#home">Halaman Depan</a>
-        			</li>
-        			<li class="nav-item">
-          				<a class="nav-link" href="#about">Tentang</a>
-        			</li>
-        			<li class="nav-item">
-         				<a class="nav-link" href="#experience">Pengalaman</a>
-       				</li>
-        			<li class="nav-item">
-          				<a class="nav-link" href="#kontak">Kontak</a>
-        			</li>
-      			</ul>
-    		</div>
-  		</div>
-	</nav>
-
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #191970;">
+	<div class="container"><span class="fa fa-cog fa-spin fa-3x fa-fw" style="color: #F0F8FF;"></span>
+		<a class="navbar-brand" href="#">RICKY MUBARAK</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>  
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#home"><i class="fa fa-home"></i> Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about"><i class="fa fa-info-circle"> About Me</i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#experience"><i class="fa fa-cogs" aria-hidden="true"></i> Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#galeri"><i class="fa fa-folder" aria-hidden="true"></i> Galeri</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#kontak"><i class="fa fa-envelope-square" aria-hidden="true"></i> Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+  </nav>
+<i class="fa fa-envelope-square" aria-hidden="true"></i>
     <!--End Navbar-->
 
     <!--Jumbotron-->
     
-    <section class="jumbotron text-center">
-    	<img src="img/Foto Profile.jpg" alt="Ricky Mubarak" width="200" class="rounded-circle img-thumbnail" />
-  		<h1 class="display-4">Ricky Mubarak</h1>
-  		<p class="lead">Sarjana Komputer</p>
-  		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  			<path fill="#ffff" fill-opacity="1" d="M0,256L48,218.7C96,181,192,107,288,85.3C384,64,480,96,576,122.7C672,149,768,171,864,197.3C960,224,1056,256,1152,266.7C1248,277,1344,267,1392,261.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-  			</path>
-  		</svg>
+  <section class="jumbotron text-center" style="text-transform: uppercase;">
+    <div data-aos="zoom-in">
+      <img src="img/Foto Profile.jpg" alt="Ricky Mubarak" width="300" class="rounded-circle img-thumbnail" />
+    </div>
+    <div>
+        <h1>Ricky Mubarak</h1>
+          <p class="row fs-5 text-center">Computer Science | Honorary Employee Government</p>
+    </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#ffff" fill-opacity="1" d="M0,256L48,218.7C96,181,192,107,288,85.3C384,64,480,96,576,122.7C672,149,768,171,864,197.3C960,224,1056,256,1152,266.7C1248,277,1344,267,1392,261.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
 	</section>
 
     <!--End Jumbotron-->
@@ -62,114 +89,172 @@
     <!--Tentang-->
     
     <section id="about">
-	    <div class="container">	
-	    	<div class="row mb-3">
-	    		<div class="col text-center">
-	    			<h2>Tentang Saya</h2>
-	    		</div>
-	    	</div>
-	    	<div class="row justify-content-center fs-5 text-center">
-	    		<div class="col-md-3">
-	    		<p>Perkenalkan Nama Saya Ricky Mubarak, Saya Lulusan Informatika Universitas Tanjungpura Angkatan 2015. Saya Lahir di Kota Pontianak Provinsi Kalimantan Barat, Indonesia. Agama saya Islam, memiliki tinggi badan 167 cm dan berat badan 72 Kg. Saat ini saya masih belum menikah.</p>	
-	    		</div>
-	    		<div class="col-md-3">
-	    		<p>Saat ini saya sedang bekerja sebagai tenaga Kontrak di Pemerintah Kota Pontianak sebagai Operator Sistem Informasi Manajemen Tambahan Penghasilan Pegawai (SIMTPP), saya bekerja kurang lebih 1 tahun. Saya memiliki keahlian dalam menggunakan Microsoft Office, Zoom, dan Online</p>	
-	    		</div>
-	    		<div class="col-md-3">
-	    		<p>Selama berkuliah saya aktif di beberapa kegiatan seperti organisasi Himpunan Mahasiswa Informatika sebagai Koordinator Bidang Pengembangan Sumber Daya Mahasiswa (2019). Saya juga pernah menjadi Koordinator Lapangan pada kegiatan Pengabdian Mahasiswa Kepada Masyarakat (2019). Saya juga pernah menjadi anggota Tim Program Kreatifitas Mahasiswa dan lolos pendanaan Nasional (2019).		
-	    		</p>
-	    		</div>
-	    	</div>
-	    </div>
-	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-	    	<path fill="#e2edff" fill-opacity="1" d="M0,224L30,218.7C60,213,120,203,180,186.7C240,171,300,149,360,117.3C420,85,480,43,540,32C600,21,660,43,720,96C780,149,840,235,900,256C960,277,1020,235,1080,208C1140,181,1200,171,1260,154.7C1320,139,1380,117,1410,106.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
-	    	</path>
-	    </svg>	
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center mb-1">
+            <h3 class="besak animate__animated animate__fadeIn">Tentang Saya</h3>
+          </div>
+          <div class="row1-container" data-aos="fade-up">
+            <div class="box box-down cyan bg-light" data-aos="zoom-in-left">
+              <h2><img src="img/icon_1.png" alt="image" width="35px" height="35px"> General</h2>
+              <p class="text-justify">Perkenalkan Nama Saya Ricky Mubarak, Saya Lulusan Informatika Universitas Tanjungpura Angkatan 2015. Saya Lahir di Kota Pontianak Provinsi Kalimantan Barat, Indonesia. Agama saya Islam, memiliki tinggi badan 167 cm dan berat badan 72 Kg. Saat ini saya masih belum menikah.</p>
+              <img class="gambar" src="img/icon_general.png" alt="Image" width="55px" height="55px">
+            </div>
+            <div class="box red bg-light" data-aos="zoom-in-up">
+              <h2><img src="img/icon_2.png" alt="image" width="35px" height="35px"> Organization</h2>
+              <p class="text-justify">Selama berkuliah saya aktif di beberapa kegiatan seperti organisasi Himpunan Mahasiswa Informatika sebagai Koordinator Bidang Pengembangan Sumber Daya Mahasiswa (2019). Saya juga pernah menjadi Koordinator Lapangan pada kegiatan Pengabdian Mahasiswa Kepada Masyarakat (2019). Saya juga pernah menjadi anggota Tim Program Kreatifitas Mahasiswa dan lolos pendanaan Nasional (2019).</p>
+              <img class="gambar" src="img/icon_organisasi.png" alt="Image" width="55px" height="55px">
+            </div>
+            <div class="box box-down blue bg-light" data-aos="zoom-in-right">
+              <h2><img src="img/icon_3.png" alt="image" width="35px" height="35px">  About Me Now</h2>
+              <p class="text-justify">Saat ini saya sedang bekerja sebagai tenaga Kontrak di Pemerintah Kota Pontianak sebagai Operator Sistem Informasi Manajemen Tambahan Penghasilan Pegawai (SIMTPP), saya bekerja kurang lebih 1 tahun. Saya memiliki keahlian dalam menggunakan Microsoft Office, Zoom, dan Online.</a></p>
+              <img class="gambar" src="img/icon_sekarang.png" alt="Image" width="55px" height="55px">
+            </div>
+          </div>
+        </div>
+      </div>
+    <div style="height: 200px"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#e2edff" fill-opacity="1" d="M0,256L48,218.7C96,181,192,107,288,85.3C384,64,480,96,576,122.7C672,149,768,171,864,197.3C960,224,1056,256,1152,266.7C1248,277,1344,267,1392,261.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+      </svg>	
     </section>	
     
     <!--End Tentang-->
 
     <!--Pengalaman-->
 
-    <section id="experience">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col text-center">
-    				<h2>Pengalaman Saya</h2>
-    			</div>
-    		</div>
-    		<div class="row justify-content-center">
-    			<div class="col-md-4 mb-3">
-    				<div class="card">
-  						<img src="img/DPU-PROV-kalbar.jpg" class="card-img-top" alt="experience1">
-  						<div class="card-body">
-    						<p class="card-text">Dinas PUPR Provinsi Kalimantan Barat | Administrasi Penawaran Kontrak Kerja (2018)</p>
-  						</div>
-					</div>
-    			</div>
-    			<div class="col-md-4 mb-3">
-    				<div class="card">
-  						<img src="img/BKPSDM.png" class="card-img-top" alt="experience2">
-  						<div class="card-body">
-    						<p class="card-text">Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Kota Pontianak | Operator Sistem Informasi Manajemen Tambahan Penghasilan Pegawai (SIMTPP) Kota Pontianak (2020-Sekarang)</p>
-  						</div>
-					</div>
-    			</div>
-    			<div class="col-md-4 mb-3">
-    				<div class="card">
-  						<img src="img/justin.png" class="card-img-top" alt="experience3">
-  						<div class="card-body">
-    						<p class="card-text">Penelitian Prediksi Hasil Tangkapan Ikan Menggunakan Fuzzy Time Series | Jurnal Sistem dan Teknologi Informasi https://jurnal.untan.ac.id/index.php/justin/article/view/39831 (2020) </p>
-  						</div>
-					</div>
-    			</div>
-    		</div>
-    	</div>
-    	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,128L40,117.3C80,107,160,85,240,112C320,139,400,213,480,224C560,235,640,181,720,154.7C800,128,880,128,960,138.7C1040,149,1120,171,1200,170.7C1280,171,1360,149,1400,138.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-    </section>
+  <section id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mb-5">
+            <h3 class="besak animate__animated animate__fadeIn">Pengalaman</h3>
+        </div> 
+        <div class="timeline" data-aos="zoom-out-down" data-aos-delay="200">
+            <div class="container-time-line left" data-aos="fade-up" data-aos-delay="500"><i class="icon-time-line-atas"></i>
+              <div class="date" data-aos="zoom-in-up" data-aos-delay="1000">2018</div>
+              <i class="icon fa fa-home" data-aos="zoom-in" data-aos-delay="1500"></i>
+              <div class="content" data-aos="fade-right" data-as-delay="2000">
+                <h2>Dinas PUPR Prov. KALBAR</h2>
+                <p>
+                  Administrasi Penawaran Kontrak Kerja
+                </p>
+              </div>
+            </div>
+            <div class="container-time-line right" data-aos="zoom-out" data-aos-delay="500">
+              <div class="date" data-aos="zoom-in-up" data-aos-delay="1000">2020</div>
+              <i class="icon fa fa-user" data-aos="zoom-in" data-aos-delay="1500"></i>
+              <div class="content" data-aos="fade-left" data-as-delay="2000">
+                <h2>Penelitian Prediksi Hasil Tangkapan Ikan Menggunakan Fuzzy Time Series</h2>
+                <p><a class="text-muted fs-5 fw-light" href="https://jurnal.untan.ac.id/index.php/justin/article/view/39831">
+                  Jurnal Sistem dan Teknologi Informasi</a>
+                </p>
+              </div>
+            </div>
+            <div class="container-time-line left" data-aos="fade-up" data-aos-delay="500">
+              <div class="date" data-aos="zoom-in-up" data-aos-delay="1000">2020</div>
+              <i class="icon fa fa-gift" data-aos="zoom-in" data-aos-delay="1500"></i>
+              <div class="content" data-aos="fade-right" data-aos-delay="2000">
+                <h2>Badan Kepegawaian dan Pengembangan Sumber Daya Manusia Kota Pontianak</h2>
+                <p>
+                  Operator Sistem Informasi Manajemen Tambahan Penghasilan Pegawai (SIMTPP) Kota Pontianak.
+                </p>
+              </div>
+            </div>
+            <div class="icon-time-line-bawah"></div>
+         </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,128L40,117.3C80,107,160,85,240,112C320,139,400,213,480,224C560,235,640,181,720,154.7C800,128,880,128,960,138.7C1040,149,1120,171,1200,170.7C1280,171,1360,149,1400,138.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+  </section>
 
     <!--End Pengalaman-->
 
+    <!-- Galeri -->
+    <section id="galeri">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h3 class="besak animate__animated animate__fadeIn">Galeri</h3>
+          </div>
+        </div> 
+          <div id="slider">
+            <!-- <a href="#galeri" class="control_next"><i class="fa fa-arrow-right"></i></a>
+            <a href="#galeri" class="control_prev"><i class="fa fa-arrow-left"></i></a> -->
+            <ul>
+              <li>
+                <img src="img/pmkm_2.jpg">
+              </li>
+              <li>
+                <img src="img/mhs.jpg">
+              </li>
+              <li>
+                <img src="img/futsal.jpg">
+              </li>
+            </ul>
+            <!-- <ul style="width: 2000px; margin-left: -500px;">
+              <li>
+                <img src="img/mhs.jpg">
+              </li>
+            </ul>
+            <ul style="width: 2000px; margin-left: -500px;">
+              <li>
+                <img src="img/futsal.jpg">
+              </li>
+            </ul> -->
+          </div>
+      </div>
+      <div style="height: 750px"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,160C384,139,480,85,576,53.3C672,21,768,11,864,21.3C960,32,1056,64,1152,80C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+
     <!--Kontak-->
 
-    <section id="kontak">
+    <section id="kontak" class="">
     	<div class="container">
     		<div class="row">
     			<div class="col text-center mb-3">
-    				<h2>Hubungi Saya</h2>
+    				<h3 class="besak animate__animated animate__fadeIn">Hubungi Saya</h3>
     			</div>
     		</div>
     		<div class="row">
     			<div class="col justify-content-center mb-3">
-    				<form>
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terimakasih!</strong> Pesan anda sudah terkirim.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+    				<form name="Jawaban-Website-Portfolio">
 					  <div class="mb-3">
 					    <label for="name" class="form-label">Nama Lengkap</label>
-					    <input type="text" class="form-control" id="name" aria-describedby="name">
-					    <div id="name" class="form-text">Isikan Nama Anda.</div>
+					    <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Isikan Nama Anda">
 					  </div>
 					  <div class="mb-3">
 					    <label for="email" class="form-label">Alamat Email</label>
-					    <input type="email" class="form-control" id="email" aria-describedby="email">
-					    <div id="email" class="form-text">Isikan Email Anda.</div>
+					    <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Isikan Email Anda">
 					  </div>
 					  <div class="mb-3">
 					    <label for="pesan" class="form-label">Pesan</label>
-					    <textarea id="pesan" class="form-control" rows="3"></textarea>
+					    <textarea id="pesan" class="form-control" rows="3" name="pesan" placeholder="Masukan Pesan"></textarea>
 					  </div>
-					  <button type="submit" class="btn btn-primary">Kirim</button>
+					  <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              Tunggu Sebentar...
+            </button>
 					</form>
     			</div>
     		</div>
     	</div>
-    	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffc107" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#191970" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
     <!--End Kontak-->
-
+  </body>
     <!--Footer-->
 
-    <footer class="bg-warning text-white text-center pb-4">
-    	<p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.kumpulbagi.com" class="text-white fw-bold">Ricky Mubarak</a></p>
+    <footer class="text-white text-center pb-4" style="background : #191970;">
+    	<p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://id.linkedin.com/in/ricky-mubarak-509706152" class="text-white fw-bold">Ricky Mubarak</a></p>
     </footer>
 
     <!--End Footer-->
@@ -181,9 +266,103 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>-->
+
+<!-- Klick Menu -->
+    <script>
+    $(document).ready(function() {
+      $('a').click(function() {
+        $('a.nav-link.active').removeClass("active");
+        $(this).addClass('active');
+      });
+    });
+    </script>
+
+    <!-- JavaScript Aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxtbYvAkEdGJZ_HpaN-Ghy7s4oXhDHBWjYByLuwvBv2zG2QwYANRaAprKhEHT6o8GkfYA/exec';
+      const form = document.forms['Jawaban-Website-Portfolio'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        //ketika tombol sudah diklik
+        //tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            //tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //tampilkan alert
+            myAlert.classList.toggle('d-none');
+            //kosongkan form
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+
+<!-- Slider Bar -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <script>
+    jQuery(document).ready(function ($) {
+
+      var slideCount = $('#slider ul li').length;
+      var slideWidth = $('#slider ul li').width();
+      var slideHeight = $('#slider ul li').height();
+      var sliderUlWidth = slideCount * slideWidth;
+  
+      $('#slider').css({ width: slideWidth, height: slideHeight });
+  
+      $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+      $('#slider ul li:last-child').prependTo('#slider ul');
+
+      // function moveLeft() {
+      //   $('#slider ul').animate({
+      //       left: + slideWidth
+      //   }, 2000, function () {
+      //       $('#slider ul li:last-child').prependTo('#slider ul');
+      //       $('#slider ul').css('left', '');
+      //   });
+      // };
+
+      function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 2000, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left' ,'');
+        });
+      };
+
+      function do_slide(){
+        interval = setInterval(function () {
+          moveRight();
+        }, 1000);
+      }
+      do_slide();
+
+      $('ul li').hover(function(){
+        clearInterval(interval);
+      });
+      $('ul li').mouseleave(function(){
+        do_slide();
+      });
+    }); 
+    </script>
+
+
 </html>
